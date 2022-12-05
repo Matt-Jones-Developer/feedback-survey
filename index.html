@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:300,400,600,800,900' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,800,900' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title">glitchyCode Survey Form</h1>
+    <p id="description"><em class="banner-em">Thank you for taking the time to help me improve my
+    <br>
+    </p>
+    <h2><span><code>coding skills</span></em></h2>
+    </header>
+    <form id="survey-form" method="post" action="mailto:glitchyghost81@protonmail.com">
+      <fieldset>
+        <label for="name" id="name-label"> Name  
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </label>
+        <label for="email" id="email-label"> Email  
+          <input id="email" type="email" placeholder="Enter your finest email" required/>
+        </label>
+        <label for="age" id="age-label"> Age <em>(optional)</em> 
+        <input id="age" type="number" min="18" max="120" placeholder="Enter your age"/>
+        </label>
+        <label for="job" id="job-label"> Profession <em></em> 
+          <input id="job" type="text" placeholder="Who do you work for? " required/>
+          </label>
+      </fieldset>
+      <fieldset>
+        <label id="option">Which option best describes how you feel about my coding?
+          <select id="dropdown">
+            <option value="">choose an option</option>
+            <option value="1" name="rocks">your coding rocks my world!</option>
+            <option value="2" name="awesome">your coding is awesome!</option>
+            <option value="3" name="average-please">your coding is average</option>
+            <option value="4" name="sucks">your coding does not compute</option>
+            <option value="5" name="no-hope">just, no</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <br>
+        <label id="option">Which option best describes how you feel about my design/style?
+          <select id="dropdown">
+            <option value="">choose an option</option>
+            <option value="1" name="wild">your style is <em><b>wild!</b></em></option>
+            <option value="2" name="good">your style is great</option>
+            <option value="2" name="good">your style needs improvement</option>
+            <option value="3" name="sucks">your style is too gauche for one sadly</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="recommend" class="recommend">
+          <br>
+          Would you recommend my coding skills to anyone else?</label>
+          <label for="recommend">
+          <input class="inline" type="radio"
+          name="answer" id="recommend" value="1"/> Hell yeaah!</label>
+          <label for="recommend">
+          <input class="inline" type="radio"
+          name="answer" id="recommend" value="2"/> Hmm, maybe</label>
+          <label for="recommend">
+          <input class="inline" type="radio"
+          name="answer" id="recommend" value="3"/> No way</label>
+      </fieldset>
+      <fieldset>
+        <label for="improvements" class="improvements"> What would you like to see me improve upon?<br><em>(Tick all that apply)</em></label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="front-end"/> Front-end Projects</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="back-end"/> Back-end Projects</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="css"/> Improved CSS styling</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="html"/> Improved HTML</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="js"/> Actual Javascript please!</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="python"/> Utilize Python please</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="cleaner"/> Cleaner design</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="encourage"/> Just keep it up!</label>
+        <label for="improvements"><input id="improvements" type="checkbox" value="colab"/> Build something with me, obvs!</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"> Any comments or suggestions? <em>Please be as honest and lengthy as possible!</em>
+          <textarea id="comments" placeholder="A penny for your thoughts, Guv ?..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="submit">
+          <button type="submit" id="submit" class="glow-on-hover"> Submit
+          </button>
+        </label>
+      </fieldset>
+    </form>
+    <footer class="footer">Created with love by Glitchy81 &copy; 2022.</footer>
+  </body>
+</html>
